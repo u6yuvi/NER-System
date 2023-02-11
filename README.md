@@ -2,7 +2,7 @@
 Build NER System from Scratch 
 
 ## Model Development
-### Available Frameworks
+### Available Frameworks we will be exploring
 1. Spacy
 2. Flair
 3. HuggingFace Transformer
@@ -21,7 +21,19 @@ Our objective will be to take one of the NER dataset and do preprocessing to cre
 
 ## Building Model Inference Endpoint.
 
-## Model Deployment using KServe
+
+## Building Retreiver System
+
+### Lexical Search using ElasticSearch
+    1. TFIDFRetriever
+    2. BM25Retriever
+
+#### [Elastic Search Installation Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
+
+
+## Running Pipelines using Elyra
+
+## Model Deployment using KServe/Kubeflow
 
 
 # Getting Started 

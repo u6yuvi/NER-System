@@ -23,3 +23,14 @@ Our objective will be to take one of the NER dataset and do preprocessing to cre
 
 ## Model Deployment using KServe
 
+
+# Getting Started 
+# clone project 
+git clone https://github.com/u6yuvi/NER-System.git nersystem
+cd nersystem/
+#git checkout docker_template_exp
+
+# create conda environment [fsdl_project]
+conda env create -f environment.yml 
+conda activate semsearch
+

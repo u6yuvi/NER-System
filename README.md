@@ -1,6 +1,44 @@
 # NER-System
 Build NER System from Scratch 
 
+## Entity Extraction 
+1. Data Creation
+	1. Creating BIO scheme tags for Sequence Data
+2. Data Augmentation using:
+	1. Character Replacement
+	2. Entity Replacement
+	3. Neighbouring context Replacement
+3. Model Training
+	1. Using Vanilla Pytorch Datasets and Dataloaders
+	2. Using HuggingFace Trainer Module
+	3. Using Pytorch Lightning Framework
+	4. Flair Training Framework
+	5. Spacy Training Framework
+
+4. Model Evaluation
+5. Model Optimisation
+
+
+## Entity Retreiver
+1. Data Creation
+	1. Sparse Labeling/Judgements
+	2. Dense Labels/Judgements
+2. Different approaches to explore:
+
+	Lexical Based<BR>
+	1. TFIDF
+	2. BM25
+	3. BM25F
+	
+	Semantic Based
+	1. BiEncoder
+3. Evaluation Metric
+	1. Offline Metric
+		1. Binary Relevance Metric
+			1. Mean Reciprocal Rank[Focus on the 1st relevant document]
+			2. Mean Average Precision [ Good for 
+	2. Online Metric
+
 ## Model Development
 ### Available Frameworks we will be exploring
 1. Spacy
@@ -23,6 +61,9 @@ Our objective will be to take one of the NER dataset and do preprocessing to cre
 
 
 ## Building Retreiver System
+### Concepts
+1. Represent document in the inverted index format.
+2. TFIDF ,BM25 and BM25F 
 
 ### Lexical Search using ElasticSearch
     1. TFIDFRetriever
@@ -38,11 +79,13 @@ Our objective will be to take one of the NER dataset and do preprocessing to cre
 
 # Getting Started 
 # clone project 
+```
 git clone https://github.com/u6yuvi/NER-System.git nersystem
 cd nersystem/
-#git checkout docker_template_exp
-
-# create conda environment [fsdl_project]
+git checkout docker_template_exp
+```
+# create conda environment [ner_system]
+```
 conda env create -f environment.yml 
-conda activate semsearch
-
+conda activate ner_system
+```
